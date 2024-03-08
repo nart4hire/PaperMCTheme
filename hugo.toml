@@ -1,0 +1,9 @@
+[params]
+    author = 'Steve'
+    lisence = 'CC0 1.0 Universal'
+    lisence_url = 'https://creativecommons.org/publicdomain/zero/1.0/'
+    disable_lisence_url = false
+    disable_powered_by = false
+    [style]
+        body_bg_img_url = '/images/paper-tiling.jpg'
+        font_family = 'arial'

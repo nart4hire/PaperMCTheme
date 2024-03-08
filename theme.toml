@@ -1,0 +1,23 @@
+min_version = '0.1.0'
+name = 'PaperMC'
+license = 'CC0 1.0 Universal'
+licenselink = 'https://github.com/nart4hire/MC_Landing/LICENSE'
+description = 'Theme Inspired by Paper and Minecraft'
+
+# Taxonomy terms
+tags = [
+  'landing page',
+  'personal',
+  'simple',
+  'single page'
+]
+features = [
+  'cover-image',
+  'favicon',
+  'fast'
+]
+
+# If the theme has a single author
+[author]
+  name = 'NathanCS'
+  homepage = 'https://nathancs.dev'

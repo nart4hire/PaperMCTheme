@@ -1,0 +1,19 @@
+{{- define "main" }}
+<div class="not-found">
+    <div class="body-not-found">
+        {{ with resources.Get "images/creeper.png" }}
+            {{ if hugo.IsProduction }}
+                {{ with . | fingerprint }}
+                    <img src="{{ .RelPermalink }}" alt="Creeper" class="creeper">
+                {{ end }}
+            {{ else }}
+                <img src="{{ .RelPermalink }}" alt="Creeper" class="creeper">
+            {{ end }}
+        {{ end }}
+        <div class="not-found-text">404</div>
+    </div>
+    <div>
+        <a href="/">&lt;- It's a <b>Creeper</b>! Run Away!</a>
+    </div>
+</div>
+{{- end }}
