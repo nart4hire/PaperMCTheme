@@ -6,7 +6,7 @@
 
 {{ with resources.Get "scss/main.scss" }}
   {{ if hugo.IsProduction }}
-    {{ with . | toCSS $opts | postCSS | minify | fingerprint }}
+    {{ with . | toCSS $opts | fingerprint }}
       <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
     {{ end }}
   {{ else }}
